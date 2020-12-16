@@ -10,12 +10,6 @@
 #include "oa_pin_defs.h"
 
 /**
- * @brief stores the state of load switch
- * 
- */
-static int load_switch_state = 0;
-
-/**
  * @brief Initialise the gpio which controls load switch, pin shouldn't be left floating so, pulldown resistor will be enabled
  * 
  * @return esp_err_t returns ESP_OK if gpio's initialised, else it returns ESP_ERR_INVALID_ARG 
