@@ -12,7 +12,7 @@
  * @brief This array contains voltage values at various battery capacity. Values generated from battery's datasheet
  * 
  */
-const static float voltage_vs_capacity[] = [4.15, 2.75];
+const static float voltage_vs_capacity[] = {4.15, 2.75};
 
 /**
  * @brief Configure width and attenuation of ADC 1
