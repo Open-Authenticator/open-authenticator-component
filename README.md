@@ -7,6 +7,7 @@ ESP-IDF component for peripherals on Open Authenticator board.
 * Functions to read the three tactile switches on Open Authenticator board
 * Defines macros with pin numbers of connected peripherals
 
+Documentation: https://open-authenticator.github.io/open-authenticator-component/
 ## Installation
 
 ```
