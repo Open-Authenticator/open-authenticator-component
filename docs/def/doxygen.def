@@ -1,0 +1,667 @@
+AutoGen Definitions dummy;
+file = {
+  file-id   = 'oa__battery_8h';
+  file-name = 'oa_battery.h';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__battery_8h_1a0eb8c90dffee280b1a79d8fb16968a74';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+esp_err_t
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'config_adc1';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_battery.h';
+      func-mem-desc-line = '22';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Configure width and attenuation of ADC 1.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return esp_err_t - returns ESP_OK if 11dB attenuation and 12 bit width configured to ADC 1, else it returns ESP_ERR_INVALID_ARG.  
+<br>
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__battery_8h_1a97ba6a060bde9d47d6783e6c8c73e6fc';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+esp_err_t
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'characterize_adc1';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_battery.h';
+      func-mem-desc-line = '29';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Characterize ADC 1 using either Vref or Two Point.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return esp_err_t 
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__battery_8h_1ad968a2b7d4857796a243456c318dcbeb';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'battery_percentage';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_battery.h';
+      func-mem-desc-line = '36';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+This function computes the battery percentage, by interpolating based on the battery discharge curve.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return int Returns the battery percentage
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'oa__battery_8h_1a685be6dca5526dcccbab3a08387d5649';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const static float
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'voltage_vs_capacity';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= {4.15, 2.75}
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_battery.h';
+      var-mem-desc-line = '15';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+This array contains voltage values at various battery capacity. Values generated from battery's datasheet.
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ 
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_battery.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'oa__pin__defs_8h';
+  file-name = 'oa_pin_defs.h';
+    define = {
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'oa__pin__defs_8h_1ab0d032afa5608859c4caabf320a2a74d';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'LOAD_SWITCH';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+23
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_pin_defs.h';
+      define-mem-desc-line = '5';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'oa__pin__defs_8h_1a80e456546d70dd2d14dfd203f023fc62';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'RTC_SCL';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+18
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_pin_defs.h';
+      define-mem-desc-line = '8';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'oa__pin__defs_8h_1ad137b49d8266b56bb6063ba8c882b1e4';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'RTC_SDA';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+5
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_pin_defs.h';
+      define-mem-desc-line = '9';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'oa__pin__defs_8h_1ad3ddbbb48cad4c34406916e199b89122';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'OLED_SCL';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+22
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_pin_defs.h';
+      define-mem-desc-line = '12';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'oa__pin__defs_8h_1afbf31d4d5bad7fd61418b8b8036df96c';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'OLED_SDA';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+21
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_pin_defs.h';
+      define-mem-desc-line = '13';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'oa__pin__defs_8h_1a96f4175fa53fcf7f57345c9340baeeda';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'SWITCH_UP';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+26
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_pin_defs.h';
+      define-mem-desc-line = '16';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'oa__pin__defs_8h_1ace5feeaa9969f15c670ccdbf1c73cc2d';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'SWITCH_DOWN';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+25
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_pin_defs.h';
+      define-mem-desc-line = '17';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'oa__pin__defs_8h_1aa4a9a0d8c05d5b46f9bfc21572d3bc1c';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'SWITCH_SELECT';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_pin_defs.h';
+      define-mem-desc-line = '18';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'oa__pin__defs_8h_1a92c9e90c4951f92f31aefd2c6d1b71f1';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'BATTERY_TERMINAL';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+35
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_pin_defs.h';
+      define-mem-desc-line = '21';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    };
+  file-full-name  = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_pin_defs.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'oa__power_8h';
+  file-name = 'oa_power.h';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__power_8h_1afb4e3b0bc8db33b62c74e97ba19ab3c8';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+esp_err_t
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'init_load_switch';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_power.h';
+      func-mem-desc-line = '17';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Initialise the gpio which controls load switch, pin shouldn't be left floating so, pulldown resistor will be enabled.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return esp_err_t returns ESP_OK if gpio's initialised, else it returns ESP_ERR_INVALID_ARG 
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__power_8h_1a9c1a688189fd68a499051081712ed35d';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'activate_load_switch';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_power.h';
+      func-mem-desc-line = '24';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Activates the load switch and thus powering on the OLED and RTC connected to it. Load switch is active high.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return int returns the state of the load switch
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__power_8h_1a5890c7d384ec7c339a189971e50af1f9';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'deactivate_load_switch';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_power.h';
+      func-mem-desc-line = '31';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Deactivates the load switch and thus powering off the OLED and RTC connected to it.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return int returns the state of the load switch
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__power_8h_1ae6cf07464ccdfbf2d189cf09a07edb71';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'read_state_load_switch';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_power.h';
+      func-mem-desc-line = '38';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Reads the state of load switch.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return int returns the value of the static variable load_switch_state
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_power.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'oa__switches_8h';
+  file-name = 'oa_switches.h';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__switches_8h_1aa541777e9dec217820210c9311f4d216';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+esp_err_t
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'init_switches';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_switches.h';
+      func-mem-desc-line = '15';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Enables tactile switches on the sra board, sets up required gpio's in input pull-up mode.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return esp_err_t - returns ESP_OK if gpio's initialised, else it returns ESP_ERR_INVALID_ARG 
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__switches_8h_1aa394f2692a1f424f79d5c3dcfa0d7bc6';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'read_switch';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'switch_id';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_switches.h';
+      func-mem-desc-line = '23';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Reads the state of one of the four switches on sra board.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param switch_id id of the switch which needs to be read, we can pass the following macros: SWITCH_UP, SWITCH_DOWN, SWITCH_SELECT 
+@return int - returns state of the switch, 1 if it is pressed and 0 if it is not pressed.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_switches.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_r_e_a_d_m_e_8md';
+  file-name = 'README.md';
+  file-full-name  = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/README.md';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'oa__battery_8c';
+  file-name = 'oa_battery.c';
+  file-full-name  = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_battery.c';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'oa__power_8c';
+  file-name = 'oa_power.c';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__power_8c_1afb4e3b0bc8db33b62c74e97ba19ab3c8';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+esp_err_t
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'init_load_switch';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_power.c';
+      func-mem-desc-line = '11';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Initialise the gpio which controls load switch, pin shouldn't be left floating so, pulldown resistor will be enabled.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return esp_err_t returns ESP_OK if gpio's initialised, else it returns ESP_ERR_INVALID_ARG 
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__power_8c_1a9c1a688189fd68a499051081712ed35d';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'activate_load_switch';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_power.c';
+      func-mem-desc-line = '41';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Activates the load switch and thus powering on the OLED and RTC connected to it. Load switch is active high.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return int returns the state of the load switch
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__power_8c_1a5890c7d384ec7c339a189971e50af1f9';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'deactivate_load_switch';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_power.c';
+      func-mem-desc-line = '46';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Deactivates the load switch and thus powering off the OLED and RTC connected to it.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return int returns the state of the load switch
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__power_8c_1ae6cf07464ccdfbf2d189cf09a07edb71';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'read_state_load_switch';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_power.c';
+      func-mem-desc-line = '51';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Reads the state of load switch.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return int returns the value of the static variable load_switch_state
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'oa__power_8c_1a3bc636ca4146b4ae4947c0676ce430f1';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+static const char *
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'TAG_POWER';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "load_switch"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_power.c';
+      var-mem-desc-line = '3';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'oa__power_8c_1a7d272354e6e5f384466c1346fb8d284b';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+static int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'load_switch_state';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_power.c';
+      var-mem-desc-line = '9';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+stores the state of load switch
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ 
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_power.c';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'oa__switches_8c';
+  file-name = 'oa_switches.c';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__switches_8c_1aa541777e9dec217820210c9311f4d216';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+esp_err_t
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'init_switches';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_switches.c';
+      func-mem-desc-line = '6';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Enables tactile switches on the sra board, sets up required gpio's in input pull-up mode.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return esp_err_t - returns ESP_OK if gpio's initialised, else it returns ESP_ERR_INVALID_ARG 
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__switches_8c_1aa394f2692a1f424f79d5c3dcfa0d7bc6';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'read_switch';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'switch_id';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_switches.c';
+      func-mem-desc-line = '36';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Reads the state of one of the four switches on sra board.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param switch_id id of the switch which needs to be read, we can pass the following macros: SWITCH_UP, SWITCH_DOWN, SWITCH_SELECT 
+@return int - returns state of the switch, 1 if it is pressed and 0 if it is not pressed.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'oa__switches_8c_1ac00d65aab541451923cc2fc80893786e';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+static const char *
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'TAG_SWITCHES';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "switches"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_switches.c';
+      var-mem-desc-line = '3';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'oa__switches_8c_1a12969bf73776a7910e94358b4e8c3f13';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+static int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'init_switches_flag';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_switches.c';
+      var-mem-desc-line = '4';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_switches.c';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */

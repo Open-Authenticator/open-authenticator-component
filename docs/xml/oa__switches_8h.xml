@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="oa__switches_8h" kind="file" language="C++">
+    <compoundname>oa_switches.h</compoundname>
+    <includes local="yes">freertos/FreeRTOS.h</includes>
+    <includes local="yes">driver/gpio.h</includes>
+    <includes local="yes">esp_log.h</includes>
+    <includes local="yes">esp_err.h</includes>
+    <includes refid="oa__pin__defs_8h" local="yes">oa_pin_defs.h</includes>
+    <includedby refid="oa__switches_8c" local="yes">src/oa_switches.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/oa_switches.h</label>
+        <link refid="oa__switches_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>driver/gpio.h</label>
+      </node>
+      <node id="2">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="5">
+        <label>esp_err.h</label>
+      </node>
+      <node id="6">
+        <label>oa_pin_defs.h</label>
+        <link refid="oa__pin__defs_8h"/>
+      </node>
+      <node id="4">
+        <label>esp_log.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/oa_switches.h</label>
+        <link refid="oa__switches_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/oa_switches.c</label>
+        <link refid="oa__switches_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="oa__switches_8h_1aa541777e9dec217820210c9311f4d216" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t init_switches</definition>
+        <argsstring>()</argsstring>
+        <name>init_switches</name>
+        <briefdescription>
+<para>Enables tactile switches on the sra board, sets up required gpio&apos;s in input pull-up mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>esp_err_t - returns ESP_OK if gpio&apos;s initialised, else it returns ESP_ERR_INVALID_ARG </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_switches.h" line="15" column="11" bodyfile="src/oa_switches.c" bodystart="6" bodyend="34" declfile="include/oa_switches.h" declline="15" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="oa__switches_8h_1aa394f2692a1f424f79d5c3dcfa0d7bc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int read_switch</definition>
+        <argsstring>(int switch_id)</argsstring>
+        <name>read_switch</name>
+        <param>
+          <type>int</type>
+          <declname>switch_id</declname>
+        </param>
+        <briefdescription>
+<para>Reads the state of one of the four switches on sra board. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the switch which needs to be read, we can pass the following macros: SWITCH_UP, SWITCH_DOWN, SWITCH_SELECT </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int - returns state of the switch, 1 if it is pressed and 0 if it is not pressed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_switches.h" line="23" column="5" bodyfile="src/oa_switches.c" bodystart="36" bodyend="47" declfile="include/oa_switches.h" declline="23" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>OA_SWITCHES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OA_SWITCHES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;freertos/FreeRTOS.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;driver/gpio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp_log.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp_err.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="oa__pin__defs_8h" kindref="compound">oa_pin_defs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">esp_err_t<sp/><ref refid="oa__switches_8h_1aa541777e9dec217820210c9311f4d216" kindref="member">init_switches</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="oa__switches_8h_1aa394f2692a1f424f79d5c3dcfa0d7bc6" kindref="member">read_switch</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>switch_id);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/oa_switches.h"/>
+  </compounddef>
+</doxygen>

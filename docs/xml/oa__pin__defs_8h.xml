@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="oa__pin__defs_8h" kind="file" language="C++">
+    <compoundname>oa_pin_defs.h</compoundname>
+    <includedby refid="oa__battery_8h" local="yes">include/oa_battery.h</includedby>
+    <includedby refid="oa__power_8h" local="yes">include/oa_power.h</includedby>
+    <includedby refid="oa__switches_8h" local="yes">include/oa_switches.h</includedby>
+    <invincdepgraph>
+      <node id="6">
+        <label>include/oa_switches.h</label>
+        <link refid="oa__switches_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/oa_battery.h</label>
+        <link refid="oa__battery_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/oa_power.c</label>
+        <link refid="oa__power_8c"/>
+      </node>
+      <node id="1">
+        <label>include/oa_pin_defs.h</label>
+        <link refid="oa__pin__defs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/oa_power.h</label>
+        <link refid="oa__power_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/oa_battery.c</label>
+        <link refid="oa__battery_8c"/>
+      </node>
+      <node id="7">
+        <label>src/oa_switches.c</label>
+        <link refid="oa__switches_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="oa__pin__defs_8h_1ab0d032afa5608859c4caabf320a2a74d" prot="public" static="no">
+        <name>LOAD_SWITCH</name>
+        <initializer>23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_pin_defs.h" line="5" column="9" bodyfile="include/oa_pin_defs.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="oa__pin__defs_8h_1a80e456546d70dd2d14dfd203f023fc62" prot="public" static="no">
+        <name>RTC_SCL</name>
+        <initializer>18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_pin_defs.h" line="8" column="9" bodyfile="include/oa_pin_defs.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="oa__pin__defs_8h_1ad137b49d8266b56bb6063ba8c882b1e4" prot="public" static="no">
+        <name>RTC_SDA</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_pin_defs.h" line="9" column="9" bodyfile="include/oa_pin_defs.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="oa__pin__defs_8h_1ad3ddbbb48cad4c34406916e199b89122" prot="public" static="no">
+        <name>OLED_SCL</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_pin_defs.h" line="12" column="9" bodyfile="include/oa_pin_defs.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="oa__pin__defs_8h_1afbf31d4d5bad7fd61418b8b8036df96c" prot="public" static="no">
+        <name>OLED_SDA</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_pin_defs.h" line="13" column="9" bodyfile="include/oa_pin_defs.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="oa__pin__defs_8h_1a96f4175fa53fcf7f57345c9340baeeda" prot="public" static="no">
+        <name>SWITCH_UP</name>
+        <initializer>26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_pin_defs.h" line="16" column="9" bodyfile="include/oa_pin_defs.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="oa__pin__defs_8h_1ace5feeaa9969f15c670ccdbf1c73cc2d" prot="public" static="no">
+        <name>SWITCH_DOWN</name>
+        <initializer>25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_pin_defs.h" line="17" column="9" bodyfile="include/oa_pin_defs.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="oa__pin__defs_8h_1aa4a9a0d8c05d5b46f9bfc21572d3bc1c" prot="public" static="no">
+        <name>SWITCH_SELECT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_pin_defs.h" line="18" column="9" bodyfile="include/oa_pin_defs.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="oa__pin__defs_8h_1a92c9e90c4951f92f31aefd2c6d1b71f1" prot="public" static="no">
+        <name>BATTERY_TERMINAL</name>
+        <initializer>35</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_pin_defs.h" line="21" column="9" bodyfile="include/oa_pin_defs.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>OA_PIN_DEFS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OA_PIN_DEFS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Pin<sp/>number<sp/>of<sp/>load<sp/>switch<sp/>controlling<sp/>power<sp/>to<sp/>RTC<sp/>and<sp/>OLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="oa__pin__defs_8h_1ab0d032afa5608859c4caabf320a2a74d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOAD_SWITCH<sp/>23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Pin<sp/>numbers<sp/>of<sp/>RTC<sp/>chip</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="oa__pin__defs_8h_1a80e456546d70dd2d14dfd203f023fc62" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RTC_SCL<sp/>18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="oa__pin__defs_8h_1ad137b49d8266b56bb6063ba8c882b1e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RTC_SDA<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Pin<sp/>numbers<sp/>of<sp/>OLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="oa__pin__defs_8h_1ad3ddbbb48cad4c34406916e199b89122" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OLED_SCL<sp/>22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="oa__pin__defs_8h_1afbf31d4d5bad7fd61418b8b8036df96c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OLED_SDA<sp/>21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Pin<sp/>numbers<sp/>of<sp/>Switches</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="oa__pin__defs_8h_1a96f4175fa53fcf7f57345c9340baeeda" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWITCH_UP<sp/><sp/><sp/><sp/><sp/>26</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="oa__pin__defs_8h_1ace5feeaa9969f15c670ccdbf1c73cc2d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWITCH_DOWN<sp/><sp/><sp/>25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="oa__pin__defs_8h_1aa4a9a0d8c05d5b46f9bfc21572d3bc1c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWITCH_SELECT<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Pin<sp/>number<sp/>of<sp/>battery<sp/>terminal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="oa__pin__defs_8h_1a92c9e90c4951f92f31aefd2c6d1b71f1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_TERMINAL<sp/>35</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/oa_pin_defs.h"/>
+  </compounddef>
+</doxygen>

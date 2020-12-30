@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="oa__power_8c" kind="file" language="C++">
+    <compoundname>oa_power.c</compoundname>
+    <includes refid="oa__power_8h" local="yes">oa_power.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>driver/gpio.h</label>
+      </node>
+      <node id="4">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="7">
+        <label>esp_err.h</label>
+      </node>
+      <node id="1">
+        <label>src/oa_power.c</label>
+        <link refid="oa__power_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>oa_pin_defs.h</label>
+        <link refid="oa__pin__defs_8h"/>
+      </node>
+      <node id="6">
+        <label>esp_log.h</label>
+      </node>
+      <node id="2">
+        <label>oa_power.h</label>
+        <link refid="oa__power_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="oa__power_8c_1a3bc636ca4146b4ae4947c0676ce430f1" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* TAG_POWER</definition>
+        <argsstring></argsstring>
+        <name>TAG_POWER</name>
+        <initializer>= &quot;load_switch&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/oa_power.c" line="3" column="19" bodyfile="src/oa_power.c" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="oa__power_8c_1a7d272354e6e5f384466c1346fb8d284b" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int load_switch_state</definition>
+        <argsstring></argsstring>
+        <name>load_switch_state</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>stores the state of load switch </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/oa_power.c" line="9" column="12" bodyfile="src/oa_power.c" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="oa__power_8c_1afb4e3b0bc8db33b62c74e97ba19ab3c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t init_load_switch</definition>
+        <argsstring>()</argsstring>
+        <name>init_load_switch</name>
+        <briefdescription>
+<para>Initialise the gpio which controls load switch, pin shouldn&apos;t be left floating so, pulldown resistor will be enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>esp_err_t returns ESP_OK if gpio&apos;s initialised, else it returns ESP_ERR_INVALID_ARG </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/oa_power.c" line="11" column="11" bodyfile="src/oa_power.c" bodystart="11" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="oa__power_8c_1a9c1a688189fd68a499051081712ed35d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int activate_load_switch</definition>
+        <argsstring>()</argsstring>
+        <name>activate_load_switch</name>
+        <briefdescription>
+<para>Activates the load switch and thus powering on the OLED and RTC connected to it. Load switch is active high. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int returns the state of the load switch </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/oa_power.c" line="41" column="5" bodyfile="src/oa_power.c" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="oa__power_8c_1a5890c7d384ec7c339a189971e50af1f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int deactivate_load_switch</definition>
+        <argsstring>()</argsstring>
+        <name>deactivate_load_switch</name>
+        <briefdescription>
+<para>Deactivates the load switch and thus powering off the OLED and RTC connected to it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int returns the state of the load switch </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/oa_power.c" line="46" column="5" bodyfile="src/oa_power.c" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="oa__power_8c_1ae6cf07464ccdfbf2d189cf09a07edb71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int read_state_load_switch</definition>
+        <argsstring>()</argsstring>
+        <name>read_state_load_switch</name>
+        <briefdescription>
+<para>Reads the state of load switch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int returns the value of the static variable load_switch_state </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/oa_power.c" line="51" column="5" bodyfile="src/oa_power.c" bodystart="51" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="oa__power_8h" kindref="compound">oa_power.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>TAG_POWER<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;load_switch&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>load_switch_state<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">esp_err_t<sp/><ref refid="oa__power_8c_1afb4e3b0bc8db33b62c74e97ba19ab3c8" kindref="member">init_load_switch</ref>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_config_t<sp/>io_conf;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bit<sp/>mask<sp/>for<sp/>the<sp/>pins,<sp/>each<sp/>bit<sp/>maps<sp/>to<sp/>a<sp/>GPIO<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>io_conf.pin_bit_mask<sp/>=<sp/>1ULL<sp/>&lt;&lt;<sp/><ref refid="oa__pin__defs_8h_1ab0d032afa5608859c4caabf320a2a74d" kindref="member">LOAD_SWITCH</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>gpio<sp/>mode<sp/>to<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>io_conf.mode<sp/>=<sp/>GPIO_MODE_OUTPUT;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>pull<sp/>up<sp/>resistors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>io_conf.pull_up_en<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>disable<sp/>pull<sp/>down<sp/>resistors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>io_conf.pull_down_en<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>disable<sp/>gpio<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>io_conf.intr_type<sp/>=<sp/>GPIO_INTR_DISABLE;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>detailed<sp/>description<sp/>can<sp/>be<sp/>found<sp/>at<sp/>https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/gpio.html#_CPPv413gpio_config_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_err_t<sp/>err<sp/>=<sp/>gpio_config(&amp;io_conf);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err<sp/>==<sp/>ESP_OK)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGI(TAG_POWER,<sp/></highlight><highlight class="stringliteral">&quot;enabled<sp/>load<sp/>switch&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>load_switch_state<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGE(TAG_POWER,<sp/></highlight><highlight class="stringliteral">&quot;error:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>esp_err_to_name(err));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>load_switch_state<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="oa__power_8c_1a9c1a688189fd68a499051081712ed35d" kindref="member">activate_load_switch</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gpio_set_level((gpio_num_t)<ref refid="oa__pin__defs_8h_1ab0d032afa5608859c4caabf320a2a74d" kindref="member">LOAD_SWITCH</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="oa__power_8c_1a5890c7d384ec7c339a189971e50af1f9" kindref="member">deactivate_load_switch</ref>()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gpio_set_level((gpio_num_t)<ref refid="oa__pin__defs_8h_1ab0d032afa5608859c4caabf320a2a74d" kindref="member">LOAD_SWITCH</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="oa__power_8c_1ae6cf07464ccdfbf2d189cf09a07edb71" kindref="member">read_state_load_switch</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>load_switch_state;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/oa_power.c"/>
+  </compounddef>
+</doxygen>

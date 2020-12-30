@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="oa__battery_8h">oa_battery.h</innerfile>
+    <innerfile refid="oa__pin__defs_8h">oa_pin_defs.h</innerfile>
+    <innerfile refid="oa__power_8h">oa_power.h</innerfile>
+    <innerfile refid="oa__switches_8h">oa_switches.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="oa__battery_8h" kind="file" language="C++">
+    <compoundname>oa_battery.h</compoundname>
+    <includes local="yes">freertos/FreeRTOS.h</includes>
+    <includes local="yes">driver/adc.h</includes>
+    <includes local="yes">esp_adc_cal.h</includes>
+    <includes local="yes">esp_log.h</includes>
+    <includes local="yes">esp_err.h</includes>
+    <includes refid="oa__pin__defs_8h" local="yes">oa_pin_defs.h</includes>
+    <includedby refid="oa__battery_8c" local="yes">src/oa_battery.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>freertos/FreeRTOS.h</label>
+      </node>
+      <node id="4">
+        <label>esp_adc_cal.h</label>
+      </node>
+      <node id="6">
+        <label>esp_err.h</label>
+      </node>
+      <node id="3">
+        <label>driver/adc.h</label>
+      </node>
+      <node id="1">
+        <label>include/oa_battery.h</label>
+        <link refid="oa__battery_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>oa_pin_defs.h</label>
+        <link refid="oa__pin__defs_8h"/>
+      </node>
+      <node id="5">
+        <label>esp_log.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/oa_battery.h</label>
+        <link refid="oa__battery_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/oa_battery.c</label>
+        <link refid="oa__battery_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="oa__battery_8h_1a685be6dca5526dcccbab3a08387d5649" prot="public" static="yes" mutable="no">
+        <type>const static float</type>
+        <definition>const static float voltage_vs_capacity[]</definition>
+        <argsstring>[]</argsstring>
+        <name>voltage_vs_capacity</name>
+        <initializer>= {4.15, 2.75}</initializer>
+        <briefdescription>
+<para>This array contains voltage values at various battery capacity. Values generated from battery&apos;s datasheet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_battery.h" line="15" column="20" bodyfile="include/oa_battery.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="oa__battery_8h_1a0eb8c90dffee280b1a79d8fb16968a74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t config_adc1</definition>
+        <argsstring>()</argsstring>
+        <name>config_adc1</name>
+        <briefdescription>
+<para>Configure width and attenuation of ADC 1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>esp_err_t - returns ESP_OK if 11dB attenuation and 12 bit width configured to ADC 1, else it returns ESP_ERR_INVALID_ARG. <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_battery.h" line="22" column="11" declfile="include/oa_battery.h" declline="22" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="oa__battery_8h_1a97ba6a060bde9d47d6783e6c8c73e6fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t characterize_adc1</definition>
+        <argsstring>()</argsstring>
+        <name>characterize_adc1</name>
+        <briefdescription>
+<para>Characterize ADC 1 using either Vref or Two Point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>esp_err_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_battery.h" line="29" column="11" declfile="include/oa_battery.h" declline="29" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="oa__battery_8h_1ad968a2b7d4857796a243456c318dcbeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int battery_percentage</definition>
+        <argsstring>()</argsstring>
+        <name>battery_percentage</name>
+        <briefdescription>
+<para>This function computes the battery percentage, by interpolating based on the battery discharge curve. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int Returns the battery percentage </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/oa_battery.h" line="36" column="5" declfile="include/oa_battery.h" declline="36" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>OA_BATTERY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OA_BATTERY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;freertos/FreeRTOS.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;driver/adc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp_adc_cal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp_log.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;esp_err.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="oa__pin__defs_8h" kindref="compound">oa_pin_defs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>voltage_vs_capacity[]<sp/>=<sp/>{4.15,<sp/>2.75};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">esp_err_t<sp/><ref refid="oa__battery_8h_1a0eb8c90dffee280b1a79d8fb16968a74" kindref="member">config_adc1</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">esp_err_t<sp/><ref refid="oa__battery_8h_1a97ba6a060bde9d47d6783e6c8c73e6fc" kindref="member">characterize_adc1</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="oa__battery_8h_1ad968a2b7d4857796a243456c318dcbeb" kindref="member">battery_percentage</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/oa_battery.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Open<sp/>Authenticator<sp/>component</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">ESP-IDF<sp/>component<sp/>for<sp/>peripherals<sp/>on<sp/>Open<sp/>Authenticator<sp/>board.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>Functions<sp/>to<sp/>read<sp/>battery<sp/>voltage<sp/>and<sp/>battery<sp/>percentage</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Functions<sp/>to<sp/>control<sp/>the<sp/>load<sp/>switch<sp/>which<sp/>powers<sp/>OLED<sp/>and<sp/>RTC<sp/>on<sp/>Open<sp/>Authenticator<sp/>board</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Functions<sp/>to<sp/>read<sp/>the<sp/>three<sp/>tactile<sp/>switches<sp/>on<sp/>Open<sp/>Authenticator<sp/>board</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Defines<sp/>macros<sp/>with<sp/>pin<sp/>numbers<sp/>of<sp/>connected<sp/>peripherals</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Installation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>&lt;your_esp_idf_project&gt;</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>components</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>components</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/Open-Authenticator/open-authenticator-component.git</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Contributors</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[Vedant<sp/>Paranjape](https://github.com/VedantParanjape)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>License</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">MIT<sp/>License</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Copyright<sp/>(c)<sp/>2020<sp/>Vedant<sp/>Paranjape</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline><highlight class="normal">of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline><highlight class="normal">copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline><highlight class="normal">IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline><highlight class="normal">FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline><highlight class="normal">AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline><highlight class="normal">LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline><highlight class="normal">OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline><highlight class="normal">SOFTWARE.</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="oa__battery_8h" kind="file"><name>oa_battery.h</name>
+    <member refid="oa__battery_8h_1a685be6dca5526dcccbab3a08387d5649" kind="variable"><name>voltage_vs_capacity</name></member>
+    <member refid="oa__battery_8h_1a0eb8c90dffee280b1a79d8fb16968a74" kind="function"><name>config_adc1</name></member>
+    <member refid="oa__battery_8h_1a97ba6a060bde9d47d6783e6c8c73e6fc" kind="function"><name>characterize_adc1</name></member>
+    <member refid="oa__battery_8h_1ad968a2b7d4857796a243456c318dcbeb" kind="function"><name>battery_percentage</name></member>
+  </compound>
+  <compound refid="oa__pin__defs_8h" kind="file"><name>oa_pin_defs.h</name>
+    <member refid="oa__pin__defs_8h_1ab0d032afa5608859c4caabf320a2a74d" kind="define"><name>LOAD_SWITCH</name></member>
+    <member refid="oa__pin__defs_8h_1a80e456546d70dd2d14dfd203f023fc62" kind="define"><name>RTC_SCL</name></member>
+    <member refid="oa__pin__defs_8h_1ad137b49d8266b56bb6063ba8c882b1e4" kind="define"><name>RTC_SDA</name></member>
+    <member refid="oa__pin__defs_8h_1ad3ddbbb48cad4c34406916e199b89122" kind="define"><name>OLED_SCL</name></member>
+    <member refid="oa__pin__defs_8h_1afbf31d4d5bad7fd61418b8b8036df96c" kind="define"><name>OLED_SDA</name></member>
+    <member refid="oa__pin__defs_8h_1a96f4175fa53fcf7f57345c9340baeeda" kind="define"><name>SWITCH_UP</name></member>
+    <member refid="oa__pin__defs_8h_1ace5feeaa9969f15c670ccdbf1c73cc2d" kind="define"><name>SWITCH_DOWN</name></member>
+    <member refid="oa__pin__defs_8h_1aa4a9a0d8c05d5b46f9bfc21572d3bc1c" kind="define"><name>SWITCH_SELECT</name></member>
+    <member refid="oa__pin__defs_8h_1a92c9e90c4951f92f31aefd2c6d1b71f1" kind="define"><name>BATTERY_TERMINAL</name></member>
+  </compound>
+  <compound refid="oa__power_8h" kind="file"><name>oa_power.h</name>
+    <member refid="oa__power_8h_1afb4e3b0bc8db33b62c74e97ba19ab3c8" kind="function"><name>init_load_switch</name></member>
+    <member refid="oa__power_8h_1a9c1a688189fd68a499051081712ed35d" kind="function"><name>activate_load_switch</name></member>
+    <member refid="oa__power_8h_1a5890c7d384ec7c339a189971e50af1f9" kind="function"><name>deactivate_load_switch</name></member>
+    <member refid="oa__power_8h_1ae6cf07464ccdfbf2d189cf09a07edb71" kind="function"><name>read_state_load_switch</name></member>
+  </compound>
+  <compound refid="oa__switches_8h" kind="file"><name>oa_switches.h</name>
+    <member refid="oa__switches_8h_1aa541777e9dec217820210c9311f4d216" kind="function"><name>init_switches</name></member>
+    <member refid="oa__switches_8h_1aa394f2692a1f424f79d5c3dcfa0d7bc6" kind="function"><name>read_switch</name></member>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="oa__battery_8c" kind="file"><name>oa_battery.c</name>
+  </compound>
+  <compound refid="oa__power_8c" kind="file"><name>oa_power.c</name>
+    <member refid="oa__power_8c_1a3bc636ca4146b4ae4947c0676ce430f1" kind="variable"><name>TAG_POWER</name></member>
+    <member refid="oa__power_8c_1a7d272354e6e5f384466c1346fb8d284b" kind="variable"><name>load_switch_state</name></member>
+    <member refid="oa__power_8c_1afb4e3b0bc8db33b62c74e97ba19ab3c8" kind="function"><name>init_load_switch</name></member>
+    <member refid="oa__power_8c_1a9c1a688189fd68a499051081712ed35d" kind="function"><name>activate_load_switch</name></member>
+    <member refid="oa__power_8c_1a5890c7d384ec7c339a189971e50af1f9" kind="function"><name>deactivate_load_switch</name></member>
+    <member refid="oa__power_8c_1ae6cf07464ccdfbf2d189cf09a07edb71" kind="function"><name>read_state_load_switch</name></member>
+  </compound>
+  <compound refid="oa__switches_8c" kind="file"><name>oa_switches.c</name>
+    <member refid="oa__switches_8c_1ac00d65aab541451923cc2fc80893786e" kind="variable"><name>TAG_SWITCHES</name></member>
+    <member refid="oa__switches_8c_1a12969bf73776a7910e94358b4e8c3f13" kind="variable"><name>init_switches_flag</name></member>
+    <member refid="oa__switches_8c_1aa541777e9dec217820210c9311f4d216" kind="function"><name>init_switches</name></member>
+    <member refid="oa__switches_8c_1aa394f2692a1f424f79d5c3dcfa0d7bc6" kind="function"><name>read_switch</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>
