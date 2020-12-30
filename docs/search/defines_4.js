@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['switch_5fdown_50',['SWITCH_DOWN',['../oa__pin__defs_8h.html#ace5feeaa9969f15c670ccdbf1c73cc2d',1,'oa_pin_defs.h']]],
-  ['switch_5fselect_51',['SWITCH_SELECT',['../oa__pin__defs_8h.html#aa4a9a0d8c05d5b46f9bfc21572d3bc1c',1,'oa_pin_defs.h']]],
-  ['switch_5fup_52',['SWITCH_UP',['../oa__pin__defs_8h.html#a96f4175fa53fcf7f57345c9340baeeda',1,'oa_pin_defs.h']]]
+  ['rtc_5fscl_50',['RTC_SCL',['../oa__pin__defs_8h.html#a80e456546d70dd2d14dfd203f023fc62',1,'oa_pin_defs.h']]],
+  ['rtc_5fsda_51',['RTC_SDA',['../oa__pin__defs_8h.html#ad137b49d8266b56bb6063ba8c882b1e4',1,'oa_pin_defs.h']]]
 ];

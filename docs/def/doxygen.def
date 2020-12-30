@@ -2,6 +2,26 @@ AutoGen Definitions dummy;
 file = {
   file-id   = 'oa__battery_8h';
   file-name = 'oa_battery.h';
+    define = {
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'oa__battery_8h_1a63baed8df076ce9dddaea1ae8694c1d8';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'DEFAULT_VREF';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+1100
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_battery.h';
+      define-mem-desc-line = '11';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    };
     func = {
     func-member = {
       func-mem-kind = 'function';
@@ -13,7 +33,7 @@ esp_err_t
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'config_adc1';
       func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_battery.h';
-      func-mem-desc-line = '22';
+      func-mem-desc-line = '24';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Configure width and attenuation of ADC 1.
 _EnD_oF_dEf_TeXt_;
@@ -32,7 +52,7 @@ esp_err_t
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'characterize_adc1';
       func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_battery.h';
-      func-mem-desc-line = '29';
+      func-mem-desc-line = '31';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Characterize ADC 1 using either Vref or Two Point.
 _EnD_oF_dEf_TeXt_;
@@ -42,15 +62,15 @@ _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
       func-mem-kind = 'function';
-      func-mem-id   = 'oa__battery_8h_1ad968a2b7d4857796a243456c318dcbeb';
+      func-mem-id   = 'oa__battery_8h_1aad29483f3ce0f9e717ac2cf49c73cd08';
       func-mem-virt = normal;
       func-mem-prot = public;
       func-mem-type = <<_EnD_oF_dEf_TeXt_
-int
+float
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'battery_percentage';
       func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_battery.h';
-      func-mem-desc-line = '36';
+      func-mem-desc-line = '38';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This function computes the battery percentage, by interpolating based on the battery discharge curve.
 _EnD_oF_dEf_TeXt_;
@@ -73,7 +93,7 @@ _EnD_oF_dEf_TeXt_;
 = {4.15, 2.75}
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/include/oa_battery.h';
-      var-mem-desc-line = '15';
+      var-mem-desc-line = '17';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This array contains voltage values at various battery capacity. Values generated from battery's datasheet.
 _EnD_oF_dEf_TeXt_;
@@ -425,6 +445,104 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = 'oa__battery_8c';
   file-name = 'oa_battery.c';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__battery_8c_1a0eb8c90dffee280b1a79d8fb16968a74';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+esp_err_t
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'config_adc1';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_battery.c';
+      func-mem-desc-line = '6';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Configure width and attenuation of ADC 1.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return esp_err_t - returns ESP_OK if 11dB attenuation and 12 bit width configured to ADC 1, else it returns ESP_ERR_INVALID_ARG.  
+<br>
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__battery_8c_1a97ba6a060bde9d47d6783e6c8c73e6fc';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+esp_err_t
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'characterize_adc1';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_battery.c';
+      func-mem-desc-line = '22';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Characterize ADC 1 using either Vref or Two Point.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return esp_err_t 
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'oa__battery_8c_1aad29483f3ce0f9e717ac2cf49c73cd08';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'battery_percentage';
+      func-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_battery.c';
+      func-mem-desc-line = '43';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+This function computes the battery percentage, by interpolating based on the battery discharge curve.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return int Returns the battery percentage
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'oa__battery_8c_1a5b0bcfa1cd6bedc30e1ebcf975043bf8';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const static char *
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'TAG_ADC';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "ADC"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_battery.c';
+      var-mem-desc-line = '3';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'oa__battery_8c_1a193eb40d27ec21d0fc054dd5f42903ed';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+static esp_adc_cal_characteristics_t
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'adc_chars';
+      var-mem-desc-file = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_battery.c';
+      var-mem-desc-line = '4';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
   file-full-name  = '/home/vedant/Programming/projects/open-authenticator/open-authenticator-component/src/oa_battery.c';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_

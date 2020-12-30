@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['load_5fswitch_45',['LOAD_SWITCH',['../oa__pin__defs_8h.html#ab0d032afa5608859c4caabf320a2a74d',1,'oa_pin_defs.h']]]
+  ['default_5fvref_46',['DEFAULT_VREF',['../oa__battery_8h.html#a63baed8df076ce9dddaea1ae8694c1d8',1,'oa_battery.h']]]
 ];

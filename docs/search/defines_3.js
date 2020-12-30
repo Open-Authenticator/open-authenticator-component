@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rtc_5fscl_48',['RTC_SCL',['../oa__pin__defs_8h.html#a80e456546d70dd2d14dfd203f023fc62',1,'oa_pin_defs.h']]],
-  ['rtc_5fsda_49',['RTC_SDA',['../oa__pin__defs_8h.html#ad137b49d8266b56bb6063ba8c882b1e4',1,'oa_pin_defs.h']]]
+  ['oled_5fscl_48',['OLED_SCL',['../oa__pin__defs_8h.html#ad3ddbbb48cad4c34406916e199b89122',1,'oa_pin_defs.h']]],
+  ['oled_5fsda_49',['OLED_SDA',['../oa__pin__defs_8h.html#afbf31d4d5bad7fd61418b8b8036df96c',1,'oa_pin_defs.h']]]
 ];

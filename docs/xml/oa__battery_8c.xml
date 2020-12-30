@@ -46,12 +46,140 @@
         </childnode>
       </node>
     </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="oa__battery_8c_1a5b0bcfa1cd6bedc30e1ebcf975043bf8" prot="public" static="yes" mutable="no">
+        <type>const static char *</type>
+        <definition>const static char* TAG_ADC</definition>
+        <argsstring></argsstring>
+        <name>TAG_ADC</name>
+        <initializer>= &quot;ADC&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/oa_battery.c" line="3" column="19" bodyfile="src/oa_battery.c" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="oa__battery_8c_1a193eb40d27ec21d0fc054dd5f42903ed" prot="public" static="yes" mutable="no">
+        <type>esp_adc_cal_characteristics_t</type>
+        <definition>esp_adc_cal_characteristics_t adc_chars</definition>
+        <argsstring></argsstring>
+        <name>adc_chars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/oa_battery.c" line="4" column="38" bodyfile="src/oa_battery.c" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="oa__battery_8c_1a0eb8c90dffee280b1a79d8fb16968a74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t config_adc1</definition>
+        <argsstring>()</argsstring>
+        <name>config_adc1</name>
+        <briefdescription>
+<para>Configure width and attenuation of ADC 1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>esp_err_t - returns ESP_OK if 11dB attenuation and 12 bit width configured to ADC 1, else it returns ESP_ERR_INVALID_ARG. <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/oa_battery.c" line="6" column="11" bodyfile="src/oa_battery.c" bodystart="6" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="oa__battery_8c_1a97ba6a060bde9d47d6783e6c8c73e6fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>esp_err_t</type>
+        <definition>esp_err_t characterize_adc1</definition>
+        <argsstring>()</argsstring>
+        <name>characterize_adc1</name>
+        <briefdescription>
+<para>Characterize ADC 1 using either Vref or Two Point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>esp_err_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/oa_battery.c" line="22" column="11" bodyfile="src/oa_battery.c" bodystart="22" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="oa__battery_8c_1aad29483f3ce0f9e717ac2cf49c73cd08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float battery_percentage</definition>
+        <argsstring>()</argsstring>
+        <name>battery_percentage</name>
+        <briefdescription>
+<para>This function computes the battery percentage, by interpolating based on the battery discharge curve. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int Returns the battery percentage </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/oa_battery.c" line="43" column="7" bodyfile="src/oa_battery.c" bodystart="43" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="oa__battery_8h" kindref="compound">oa_battery.h</ref>&quot;</highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="oa__battery_8h" kindref="compound">oa_battery.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*TAG_ADC<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ADC&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>esp_adc_cal_characteristics_t<sp/>adc_chars;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">esp_err_t<sp/><ref refid="oa__battery_8c_1a0eb8c90dffee280b1a79d8fb16968a74" kindref="member">config_adc1</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>ADC<sp/>to<sp/>12<sp/>bit<sp/>width</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>adc1_config_width(ADC_WIDTH_BIT_12);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>ADC<sp/>to<sp/>11dB<sp/>attenuation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>adc1_config_channel_atten(ADC_CHANNEL_0,<sp/>ADC_ATTEN_DB_11);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>adc1_config_channel_atten(ADC_CHANNEL_3,<sp/>ADC_ATTEN_DB_11);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>adc1_config_channel_atten(ADC_CHANNEL_6,<sp/>ADC_ATTEN_DB_11);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>adc1_config_channel_atten(ADC_CHANNEL_7,<sp/>ADC_ATTEN_DB_11);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>ESP_LOGI(TAG_ADC,<sp/></highlight><highlight class="stringliteral">&quot;Configured<sp/>ADC_1<sp/>to<sp/>12<sp/>Bit<sp/>and<sp/>11dB<sp/>attenuation&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ESP_OK;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">esp_err_t<sp/><ref refid="oa__battery_8c_1a97ba6a060bde9d47d6783e6c8c73e6fc" kindref="member">characterize_adc1</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>esp_adc_cal_value_t<sp/>val_type<sp/>=<sp/>esp_adc_cal_characterize(ADC_UNIT_1,<sp/>ADC_ATTEN_DB_11,<sp/>ADC_WIDTH_BIT_12,<sp/><ref refid="oa__battery_8h_1a63baed8df076ce9dddaea1ae8694c1d8" kindref="member">DEFAULT_VREF</ref>,<sp/>&amp;adc_chars);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val_type<sp/>==<sp/>ESP_ADC_CAL_VAL_EFUSE_TP)<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGI(TAG_ADC,<sp/></highlight><highlight class="stringliteral">&quot;eFuse<sp/>Two<sp/>Point:<sp/>Supported&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGI(TAG_ADC,<sp/></highlight><highlight class="stringliteral">&quot;Characterized<sp/>using<sp/>Two<sp/>Point<sp/>Value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val_type<sp/>==<sp/>ESP_ADC_CAL_VAL_EFUSE_VREF)<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGI(TAG_ADC,<sp/></highlight><highlight class="stringliteral">&quot;eFuse<sp/>Vref:<sp/>Supported&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGI(TAG_ADC,<sp/></highlight><highlight class="stringliteral">&quot;Characterized<sp/>using<sp/>eFuse<sp/>Vref&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ESP_LOGI(TAG_ADC,<sp/></highlight><highlight class="stringliteral">&quot;Characterized<sp/>using<sp/>Default<sp/>Vref&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ESP_OK;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="oa__battery_8c_1aad29483f3ce0f9e717ac2cf49c73cd08" kindref="member">battery_percentage</ref>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2*((float)esp_adc_cal_raw_to_voltage(adc1_get_raw(ADC1_CHANNEL_7),<sp/>&amp;adc_chars))/1000;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/oa_battery.c"/>
   </compounddef>

@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
   <compound refid="oa__battery_8h" kind="file"><name>oa_battery.h</name>
+    <member refid="oa__battery_8h_1a63baed8df076ce9dddaea1ae8694c1d8" kind="define"><name>DEFAULT_VREF</name></member>
     <member refid="oa__battery_8h_1a685be6dca5526dcccbab3a08387d5649" kind="variable"><name>voltage_vs_capacity</name></member>
     <member refid="oa__battery_8h_1a0eb8c90dffee280b1a79d8fb16968a74" kind="function"><name>config_adc1</name></member>
     <member refid="oa__battery_8h_1a97ba6a060bde9d47d6783e6c8c73e6fc" kind="function"><name>characterize_adc1</name></member>
-    <member refid="oa__battery_8h_1ad968a2b7d4857796a243456c318dcbeb" kind="function"><name>battery_percentage</name></member>
+    <member refid="oa__battery_8h_1aad29483f3ce0f9e717ac2cf49c73cd08" kind="function"><name>battery_percentage</name></member>
   </compound>
   <compound refid="oa__pin__defs_8h" kind="file"><name>oa_pin_defs.h</name>
     <member refid="oa__pin__defs_8h_1ab0d032afa5608859c4caabf320a2a74d" kind="define"><name>LOAD_SWITCH</name></member>
@@ -30,6 +31,11 @@
   <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="oa__battery_8c" kind="file"><name>oa_battery.c</name>
+    <member refid="oa__battery_8c_1a5b0bcfa1cd6bedc30e1ebcf975043bf8" kind="variable"><name>TAG_ADC</name></member>
+    <member refid="oa__battery_8c_1a193eb40d27ec21d0fc054dd5f42903ed" kind="variable"><name>adc_chars</name></member>
+    <member refid="oa__battery_8c_1a0eb8c90dffee280b1a79d8fb16968a74" kind="function"><name>config_adc1</name></member>
+    <member refid="oa__battery_8c_1a97ba6a060bde9d47d6783e6c8c73e6fc" kind="function"><name>characterize_adc1</name></member>
+    <member refid="oa__battery_8c_1aad29483f3ce0f9e717ac2cf49c73cd08" kind="function"><name>battery_percentage</name></member>
   </compound>
   <compound refid="oa__power_8c" kind="file"><name>oa_power.c</name>
     <member refid="oa__power_8c_1a3bc636ca4146b4ae4947c0676ce430f1" kind="variable"><name>TAG_POWER</name></member>

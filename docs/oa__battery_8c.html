@@ -68,6 +68,8 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">oa_battery.c File Reference</div>  </div>
 </div><!--header-->
@@ -88,7 +90,82 @@ Include dependency graph for oa_battery.c:</div>
 <area shape="rect" href="oa__pin__defs_8h.html" title=" " alt="" coords="657,155,769,181"/>
 </map>
 </div>
-</div></div><!-- contents -->
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0eb8c90dffee280b1a79d8fb16968a74"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oa__battery_8c.html#a0eb8c90dffee280b1a79d8fb16968a74">config_adc1</a> ()</td></tr>
+<tr class="memdesc:a0eb8c90dffee280b1a79d8fb16968a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure width and attenuation of ADC 1.  <a href="oa__battery_8c.html#a0eb8c90dffee280b1a79d8fb16968a74">More...</a><br /></td></tr>
+<tr class="separator:a0eb8c90dffee280b1a79d8fb16968a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ba6a060bde9d47d6783e6c8c73e6fc"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oa__battery_8c.html#a97ba6a060bde9d47d6783e6c8c73e6fc">characterize_adc1</a> ()</td></tr>
+<tr class="memdesc:a97ba6a060bde9d47d6783e6c8c73e6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Characterize ADC 1 using either Vref or Two Point.  <a href="oa__battery_8c.html#a97ba6a060bde9d47d6783e6c8c73e6fc">More...</a><br /></td></tr>
+<tr class="separator:a97ba6a060bde9d47d6783e6c8c73e6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad29483f3ce0f9e717ac2cf49c73cd08"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oa__battery_8c.html#aad29483f3ce0f9e717ac2cf49c73cd08">battery_percentage</a> ()</td></tr>
+<tr class="memdesc:aad29483f3ce0f9e717ac2cf49c73cd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function computes the battery percentage, by interpolating based on the battery discharge curve.  <a href="oa__battery_8c.html#aad29483f3ce0f9e717ac2cf49c73cd08">More...</a><br /></td></tr>
+<tr class="separator:aad29483f3ce0f9e717ac2cf49c73cd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aad29483f3ce0f9e717ac2cf49c73cd08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad29483f3ce0f9e717ac2cf49c73cd08">&#9670;&nbsp;</a></span>battery_percentage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float battery_percentage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function computes the battery percentage, by interpolating based on the battery discharge curve. </p>
+<dl class="section return"><dt>Returns</dt><dd>int Returns the battery percentage </dd></dl>
+
+</div>
+</div>
+<a id="a97ba6a060bde9d47d6783e6c8c73e6fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97ba6a060bde9d47d6783e6c8c73e6fc">&#9670;&nbsp;</a></span>characterize_adc1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">esp_err_t characterize_adc1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Characterize ADC 1 using either Vref or Two Point. </p>
+<dl class="section return"><dt>Returns</dt><dd>esp_err_t </dd></dl>
+
+</div>
+</div>
+<a id="a0eb8c90dffee280b1a79d8fb16968a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb8c90dffee280b1a79d8fb16968a74">&#9670;&nbsp;</a></span>config_adc1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">esp_err_t config_adc1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure width and attenuation of ADC 1. </p>
+<dl class="section return"><dt>Returns</dt><dd>esp_err_t - returns ESP_OK if 11dB attenuation and 12 bit width configured to ADC 1, else it returns ESP_ERR_INVALID_ARG. <br  />
+ </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 		<script src="custom.js"></script>
 	</body>

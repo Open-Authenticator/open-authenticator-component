@@ -69,6 +69,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">oa_battery.h File Reference</div>  </div>
@@ -106,6 +107,11 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 <p><a href="oa__battery_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a63baed8df076ce9dddaea1ae8694c1d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oa__battery_8h.html#a63baed8df076ce9dddaea1ae8694c1d8">DEFAULT_VREF</a>&#160;&#160;&#160;1100</td></tr>
+<tr class="separator:a63baed8df076ce9dddaea1ae8694c1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0eb8c90dffee280b1a79d8fb16968a74"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oa__battery_8h.html#a0eb8c90dffee280b1a79d8fb16968a74">config_adc1</a> ()</td></tr>
@@ -114,19 +120,34 @@ Functions</h2></td></tr>
 <tr class="memitem:a97ba6a060bde9d47d6783e6c8c73e6fc"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oa__battery_8h.html#a97ba6a060bde9d47d6783e6c8c73e6fc">characterize_adc1</a> ()</td></tr>
 <tr class="memdesc:a97ba6a060bde9d47d6783e6c8c73e6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Characterize ADC 1 using either Vref or Two Point.  <a href="oa__battery_8h.html#a97ba6a060bde9d47d6783e6c8c73e6fc">More...</a><br /></td></tr>
 <tr class="separator:a97ba6a060bde9d47d6783e6c8c73e6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad968a2b7d4857796a243456c318dcbeb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oa__battery_8h.html#ad968a2b7d4857796a243456c318dcbeb">battery_percentage</a> ()</td></tr>
-<tr class="memdesc:ad968a2b7d4857796a243456c318dcbeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function computes the battery percentage, by interpolating based on the battery discharge curve.  <a href="oa__battery_8h.html#ad968a2b7d4857796a243456c318dcbeb">More...</a><br /></td></tr>
-<tr class="separator:ad968a2b7d4857796a243456c318dcbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad29483f3ce0f9e717ac2cf49c73cd08"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oa__battery_8h.html#aad29483f3ce0f9e717ac2cf49c73cd08">battery_percentage</a> ()</td></tr>
+<tr class="memdesc:aad29483f3ce0f9e717ac2cf49c73cd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function computes the battery percentage, by interpolating based on the battery discharge curve.  <a href="oa__battery_8h.html#aad29483f3ce0f9e717ac2cf49c73cd08">More...</a><br /></td></tr>
+<tr class="separator:aad29483f3ce0f9e717ac2cf49c73cd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ad968a2b7d4857796a243456c318dcbeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad968a2b7d4857796a243456c318dcbeb">&#9670;&nbsp;</a></span>battery_percentage()</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a63baed8df076ce9dddaea1ae8694c1d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63baed8df076ce9dddaea1ae8694c1d8">&#9670;&nbsp;</a></span>DEFAULT_VREF</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int battery_percentage </td>
+          <td class="memname">#define DEFAULT_VREF&#160;&#160;&#160;1100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aad29483f3ce0f9e717ac2cf49c73cd08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad29483f3ce0f9e717ac2cf49c73cd08">&#9670;&nbsp;</a></span>battery_percentage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float battery_percentage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

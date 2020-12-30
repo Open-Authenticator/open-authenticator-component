@@ -14,7 +14,7 @@
 </listitem><listitem><para>Defines macros with pin numbers of connected peripherals</para>
 </listitem></itemizedlist>
 </para>
-<para><heading level="1">Installation</heading>
+<para>Documentation: <ulink url="https://open-authenticator.github.io/open-authenticator-component/">https://open-authenticator.github.io/open-authenticator-component/</ulink> <heading level="1">Installation</heading>
 </para>
 <para><programlisting><codeline><highlight class="normal">cd<sp/>&lt;your_esp_idf_project&gt;</highlight></codeline>
 <codeline><highlight class="normal">mkdir<sp/>components</highlight></codeline>

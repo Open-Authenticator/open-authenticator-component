@@ -16,6 +16,7 @@
 <codeline><highlight class="normal">*<sp/>Functions<sp/>to<sp/>read<sp/>the<sp/>three<sp/>tactile<sp/>switches<sp/>on<sp/>Open<sp/>Authenticator<sp/>board</highlight></codeline>
 <codeline><highlight class="normal">*<sp/>Defines<sp/>macros<sp/>with<sp/>pin<sp/>numbers<sp/>of<sp/>connected<sp/>peripherals</highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">Documentation:<sp/>https://open-authenticator.github.io/open-authenticator-component/</highlight></codeline>
 <codeline><highlight class="normal">##<sp/>Installation</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
