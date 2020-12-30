@@ -8,6 +8,8 @@
 #include "esp_err.h"
 #include "oa_pin_defs.h"
 
+#define DEFAULT_VREF    1100       
+
 /**
  * @brief This array contains voltage values at various battery capacity. Values generated from battery's datasheet
  * 
@@ -33,6 +35,6 @@ esp_err_t characterize_adc1();
  * 
  * @return int Returns the battery percentage
  */
-int battery_percentage();
+float battery_percentage();
 
 #endif
