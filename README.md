@@ -1,6 +1,12 @@
 # Open Authenticator component
 
-ESP-IDF component for peripherals on Open Authenticator board.
+[![SRA Board component](https://github.com/Open-Authenticator/open-authenticator-component/actions/workflows/test-build-apps.yaml/badge.svg)](https://github.com/Open-Authenticator/open-authenticator-component/actions/workflows/test-build-apps.yaml)
+[![GitHub issues](https://img.shields.io/github/issues/Open-Authenticator/open-authenticator-component)](https://github.com/Open-Authenticator/open-authenticator-component/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Open-Authenticator/open-authenticator-component)](https://github.com/Open-Authenticator/open-authenticator-component/network)
+[![GitHub stars](https://img.shields.io/github/stars/Open-Authenticator/open-authenticator-component)](https://github.com/Open-Authenticator/open-authenticator-component/stargazers)
+[![GitHub license](https://img.shields.io/github/license/Open-Authenticator/open-authenticator-component)](https://github.com/Open-Authenticator/open-authenticator-component/blob/master/LICENSE)
+
+#### ESP-IDF component for peripherals on Open Authenticator board.
 
 * Functions to read battery voltage and battery percentage
 * Functions to control the load switch which powers OLED and RTC on Open Authenticator board

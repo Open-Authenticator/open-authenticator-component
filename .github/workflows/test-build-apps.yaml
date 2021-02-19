@@ -1,4 +1,4 @@
-name: SRA Board component
+name: Open Authenticator component
 on: [push, pull_request]
 
 jobs:
@@ -9,7 +9,7 @@ jobs:
       image: espressif/idf:release-v4.1
     strategy:
       matrix:
-        test-apps: [reading-battery-percentage, reading-switches, using-load-switches]
+        test-apps: [reading-battery-percentage, reading-switches, using-load-switch]
     steps:  
       - uses: actions/checkout@v2
       - name: Test ${{ matrix.test-apps }}
